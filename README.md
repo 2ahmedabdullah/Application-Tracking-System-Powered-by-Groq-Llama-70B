@@ -6,7 +6,7 @@ An AI-native, ultra-high-speed Applicant Tracking System (ATS) matching, semanti
 
 ## 🚀 The Performance Leap
 * **Legacy Architecture (Local Qwen-2.5-7B Engine):** ~600 seconds (10 minutes) per document due to localized VRAM throughput bounds and sequential extraction loops.
-* **Optimized Groq-Llama-70B Architecture:** **~13.39 seconds** total execution time for a concurrent multi-document compilation (**100x speedup**).
+* **Optimized Groq-Llama-70B Architecture:** **Under 15 seconds** total execution time for a concurrent multi-document compilation (**100x speedup**).
 
 ---
 
@@ -25,32 +25,47 @@ The engine utilizes an asynchronous thread pool to read, segment, and normalize 
 
 
 ┌────────────────────────┐
+                       
                          │
+              
               ┌──────────┴───────────┐
               │ Unstructured CV & JD │
               └──────────┬───────────┘
+              
                          │
+           
            ┌─────────────┴─────────────┐
+           
            ▼    (ThreadPoolExecutor)   ▼
+  
   ┌──────────────────┐        ┌──────────────────┐
   │  Resume Parsing  │        │    JD Parsing    │
   │ (Llama-3.3-70B)  │        │ (Llama-3.3-70B)  │
   └────────┬─────────┘        └────────┬─────────┘
+  
            │                           │
+  
            └─────────────┬─────────────┘
+  
                          ▼
+  
            ┌───────────────────────────┐
            │    Strict JSON Object     │
            │    Pydantic Validation    │
            └─────────────┬─────────────┘
+  
                          │
+  
                          ▼
            ┌───────────────────────────┐
            │ Vector Embeddings Engine  │
            │ Mathematical Matrix Match │
+  
            └─────────────┬─────────────┘
+  
                          │
                          ▼
+  
            ┌───────────────────────────┐
            │   Contextual Remediation  │
            │  Custom Bullet Injection  │
