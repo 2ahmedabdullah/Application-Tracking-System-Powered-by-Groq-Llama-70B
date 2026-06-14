@@ -6,7 +6,7 @@ An AI-native, ultra-high-speed Applicant Tracking System (ATS) matching, semanti
 
 ## 🚀 The Performance Leap
 * **Legacy Architecture (Local Qwen-2.5-7B Engine):** ~600 seconds (10 minutes) per document due to localized VRAM throughput bounds and sequential extraction loops.
-* **Optimized Groq-Llama-70B Architecture:** **Under 15 seconds** total execution time for a concurrent multi-document compilation (**100x speedup**).
+* **Optimized Groq-Llama-70B Architecture:** **Under 15 seconds** total execution time for a concurrent multi-document compilation (**25x speedup**).
 
 ---
 
