@@ -23,7 +23,7 @@ An AI-native, ultra-high-speed Applicant Tracking System (ATS) matching, semanti
 
 The engine utilizes an asynchronous thread pool to read, segment, and normalize both incoming files simultaneously before executing downstream vector math and strategic bullet remediation:
 
-<img src="architecture.png" alt="System Architecture" width="600">
+<img src="architecture.png" alt="System Architecture" width="300">
 
 
 ## ⚙️ Local Installation & Setup
