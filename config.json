@@ -1,0 +1,14 @@
+{
+  "ollama_base_url": "http://localhost:11434",
+  "extraction_model": "qwen2.5:7b",
+  "embedding_model": "nomic-embed-text",
+  "scoring_defaults": {
+    "lambda_decay": 0.2
+  },
+  "default_weights": {
+    "weight_skills": 0.40,
+    "weight_experience": 0.30,
+    "weight_seniority": 0.20,
+    "weight_company_bonus": 0.10
+  }
+}
