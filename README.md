@@ -54,7 +54,7 @@ pip install -r requirements.txt
 
 When you fire up the engine, the pipeline processes the layout structures concurrently, builds the entity mapping, and returns a strict mathematical scorecard:
 
-### ⚡ Step 1 & 2: Asynchronous Multi-Document Ingestion Trace
+### ⚡ Parsed CV & Final Candidate Assessment
 ```text
 ====================================================
 PARSED CV OBJECT
