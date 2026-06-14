@@ -43,12 +43,12 @@ python -m venv ats_env
 ```bash
 python3 -m venv ats_env
 source ats_env/bin/activate
-
+```
 
 ### Install Core Production Dependencies
 ```bash
 pip install -r requirements.txt
-
+```
 
 ## 📊 Live Execution Snippets & Production Output
 
