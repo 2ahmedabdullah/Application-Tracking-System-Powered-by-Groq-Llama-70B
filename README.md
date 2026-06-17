@@ -1,4 +1,4 @@
-# Application-Tracking-System-Powered-by-Groq-Llama-70B ⚡
+# Application-Tracking-System-Powered-by-Groq-Llama-70B & Pydantic⚡
 
 An AI-native, ultra-high-speed Applicant Tracking System (ATS) matching, semantic scoring, and automated candidate remediation pipeline. This architecture leverages **Meta's Llama-3.3-70B-Versatile** via **Groq's LPU cloud infrastructure** paired with **Pydantic** data contracts to achieve deep semantic parsing and structured schema delivery in seconds.
 
